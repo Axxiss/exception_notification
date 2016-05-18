@@ -1,6 +1,8 @@
+version = File.read(File.expand_path('../VERSION', __FILE__)).strip
+
 Gem::Specification.new do |s|
   s.name = 'exception_notification'
-  s.version = '4.1.4'
+  s.version = version
   s.authors = ["Jamis Buck", "Josh Peek"]
   s.summary = "Exception notification for Rails apps"
   s.homepage = "https://smartinez87.github.io/exception_notification/"
