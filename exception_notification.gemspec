@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency("actionmailer", "~> 4.0")
   s.add_dependency("activesupport", "~> 4.0")
+  s.add_dependency("exception_notification_slack", version)
 
   s.add_development_dependency "rails", "~> 4.0"
   s.add_development_dependency "resque", "~> 1.2.0"
@@ -32,5 +33,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency "appraisal", "~> 2.0.0"
   s.add_development_dependency "hipchat", ">= 1.0.0"
   s.add_development_dependency "carrier-pigeon", ">= 0.7.0"
-  s.add_development_dependency "slack-notifier", ">= 1.0.0"
 end
