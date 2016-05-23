@@ -1,3 +1,5 @@
+require 'exception_notifier/base_notifier'
+
 module ExceptionNotifier
   class SlackNotifier < BaseNotifier
     include ExceptionNotifier::BacktraceCleaner
@@ -65,6 +67,5 @@ module ExceptionNotifier
         end
       end
     end
-
   end
 end
